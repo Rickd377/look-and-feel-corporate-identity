@@ -27,6 +27,16 @@ button {
   cursor: pointer;
 }
 
+blockquote {
+  p::before {
+    content: "\201C";
+  }
+
+  p::after {
+    content: "\201D";
+  }
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -556,6 +566,51 @@ select {
           background: none;
         }
       }
+    }
+  }
+}
+
+/* profile page */
+.edit-bar {
+  background-color: rgb(242 242 242 / .75);
+  position: fixed;
+  top: var(--page-nav-height);
+  width: 100%;
+
+  a {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 0 rgb(20 19 19 / .25);
+    color: black;
+    display: flex;
+    gap: 7px;
+    margin: 10px var(--page-padding) 10px auto;
+    padding: 10px 15px;
+    text-decoration: none;
+    transition: box-shadow .15s ease-out, transform .15s ease-out;
+    width: fit-content;
+
+    &:hover,
+    &:active {
+      box-shadow: 0 0 0 rgb(20 19 19 / .25);
+      transform: translateY(5px);
+    }
+  }
+}
+
+.profile-info {
+  margin-top: var(--page-nav-height);
+
+  blockquote {
+    background: var(--l600-lustful-wishes);
+    border-radius: 1.5rem;
+
+    p {
+      padding: 2rem;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #322F2F;
+      text-align: center;
     }
   }
 }
