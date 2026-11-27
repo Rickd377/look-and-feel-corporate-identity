@@ -9,7 +9,7 @@
 body {
   min-height: 100svh;
   line-height: 1.4;
-  background-color: var(--base-bleached-silk);
+  background-color: var(--site-background-color);
   font-family: var(--tasa-orbiter);
   padding-block: var(--page-nav-height);
   
@@ -100,7 +100,7 @@ blockquote {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  background-color: var(--base-bleached-silk);
+  background-color: var(--site-background-color);
   padding-inline: .5rem;
   position: fixed;
   top: 0;
@@ -281,15 +281,15 @@ section {
     }
 
     :first-child {
-      background-color: var(--l600-lustful-wishes);
+      background-color: var(--button-rainbow-pink-color);
     }
 
     :nth-child(2) {
-      background-color: var(--l600-cockatoo);
+      background-color: var(--button-rainbow-green-color);
     }
 
     :last-child {
-      background-color: var(--l600-xavier-blue);
+      background-color: var(--button-rainbow-blue-color);
       grid-column: span 2;
     }
   }
@@ -572,7 +572,7 @@ select {
 
 /* profile page */
 .edit-bar {
-  background-color: rgb(242 242 242 / .75);
+  background-color: var(--site-background-color);
   position: fixed;
   top: var(--page-nav-height);
   width: 100%;
